@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/myNewPortfolio/static/css/main.3808df82.css",
+    "main.css": "/myNewPortfolio/static/css/main.55c440d4.css",
     "main.js": "/myNewPortfolio/static/js/main.8cc1017e.js",
     "static/js/787.60e807ed.chunk.js": "/myNewPortfolio/static/js/787.60e807ed.chunk.js",
     "static/media/Ecommerce-Shoe-Website.png": "/myNewPortfolio/static/media/Ecommerce-Shoe-Website.c77f10ef6909a8e4e0f8.png",
@@ -9,12 +9,12 @@
     "static/media/Darshan-Heble-Portfolio.png": "/myNewPortfolio/static/media/Darshan-Heble-Portfolio.acdb27df2fe9494cf991.png",
     "static/media/DH Resume.pdf": "/myNewPortfolio/static/media/DH Resume.41c94eeee13203447378.pdf",
     "index.html": "/myNewPortfolio/index.html",
-    "main.3808df82.css.map": "/myNewPortfolio/static/css/main.3808df82.css.map",
+    "main.55c440d4.css.map": "/myNewPortfolio/static/css/main.55c440d4.css.map",
     "main.8cc1017e.js.map": "/myNewPortfolio/static/js/main.8cc1017e.js.map",
     "787.60e807ed.chunk.js.map": "/myNewPortfolio/static/js/787.60e807ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3808df82.css",
+    "static/css/main.55c440d4.css",
     "static/js/main.8cc1017e.js"
   ]
 }
