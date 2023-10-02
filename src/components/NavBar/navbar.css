@@ -38,6 +38,9 @@
     .button {
       color: black;
       display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       padding: 0 1rem;
       cursor: pointer;
       transition: all ease-in 1s;
