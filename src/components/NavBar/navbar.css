@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0.8rem 9%;
+  /* padding-inline: 0.5rem; */
+  /* padding-inline: clamp(0.1rem, 10%, 9.6rem); */
+  /* padding-block: clamp(10%, 10vh, 10%); */
+  /* padding-block: 1.5rem; */
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffffe3;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+
+  .navLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wraper {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      color: black;
+      display: flex;
+      padding: 0 1rem;
+      cursor: pointer;
+      transition: all ease-in 1s;
+
+      &.active {
+        .tooltip {
+          border-bottom: solid;
+        }
+        .t1,
+        .t2,
+        .t3 {
+          width: 4rem;
+        }
+
+        .t4 {
+          width: 5.2rem;
+        }
+
+        .t5 {
+          width: 6.4rem;
+        }
+        .t6 {
+          width: 5.2rem;
+        }
+      }
+
+      .icon {
+        padding-right: 5px;
+        transition: all 1s;
+
+        /* &:hover {
+          padding-right: 5px;
+        } */
+      }
+
+      .tooltip {
+        width: 0;
+        overflow: hidden;
+        transition: all 1s;
+      }
+
+      &:hover {
+        .t1,
+        .t2,
+        .t3 {
+          width: 4rem;
+        }
+
+        .t4 {
+          width: 5.2rem;
+        }
+
+        .t5 {
+          width: 6.4rem;
+        }
+        .t6 {
+          width: 5.2rem;
+        }
+      }
+    }
+  }
+
+  .moonbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+
+    .span1 {
+      display: grid;
+      place-items: center;
+      /* background-color: grey; */
+      border-radius: 50%;
+      width: 2.3rem;
+      height: 2.3rem;
+
+      .fa-moon {
+        transform: rotate(-15deg);
+        cursor: pointer;
+      }
+
+      &:hover {
+        background-color: rgba(60, 64, 67, 0.08);
+        /* box-shadow: 0px 1px 4px 3px rgba(60, 64, 67, 0.08); */
+      }
+    }
+    .bar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* .navbar {
+        padding: 1rem 5%;
+    } */
+}
+
+@media screen and (max-width: 845px) {
+  .navbar {
+    padding: 0.8rem 4%;
+
+    .navLogo {
+      font-size: 20px;
+    }
+    .wraper {
+      display: none;
+    }
+    .moonbar {
+      .bar {
+        display: grid;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.skills {
+  padding: 3rem 10%;
+}
+
+.skillsInfo {
+  /* display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 5rem;
+
+  &:nth-child(1) {
+    transition: all 1s;
+  }
+
+  &:nth-child(2) {
+    transition: all 2s;
+  }
+}
+
+.skill {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .fa_medal {
+    position: absolute;
+  }
+}
+
+.skill small {
+  color: var(--paragraph-color);
+  font-size: 22px;
+}
+
+#svghtml {
+  font-size: 7rem;
+  fill: #ff0000;
+}
+
+#svgcss {
+  font-size: 7rem;
+  fill: #005eff;
+}
+
+#svgjs {
+  font-size: 7rem;
+  fill: #ffc800;
+}
+
+#svgtwcss {
+  font-size: 7rem;
+  fill: #005eff;
+}
+#reactjs {
+  font-size: 7rem;
+  fill: rgb(0, 179, 255);
+  animation: reactanimation 10s linear infinite;
+}
+@keyframes reactanimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#svgfigma {
+  width: 110px;
+  height: 110px;
+}
+
+#svgpython {
+  width: 110px;
+  height: 110px;
+}
+
+#svgjava {
+  width: 110px;
+  height: 110px;
+}
+
+#svggithub {
+  fill: var(--icon-color);
+  font-size: 7rem;
+}
+
+#svgvscode {
+  width: 110px;
+  height: 110px;
+}
+
+#svglinux {
+  width: 110px;
+  height: 110px;
+}
+
+#svgsql {
+  font-size: 7rem;
+  fill: #5277b7;
+}
+#git {
+  font-size: 7rem;
+  fill: red;
+}
+@media screen and (max-width: 1024px) {
+  .skills {
+    padding: 3rem 5%;
+  }
+}
+@media screen and (max-width: 845px) {
+  .skill {
+    .skillsInfo {
+      .skill {
+        width: 7rem;
+      }
+    }
+  }
+}

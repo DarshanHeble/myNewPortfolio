@@ -1,0 +1,138 @@
+.Contact {
+  padding: 3rem 10%;
+
+  .contact-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2.5rem;
+
+    .othercontact {
+      display: flex;
+      flex-wrap: wrap;
+      width: min-content;
+
+      .box {
+        width: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 10px;
+        margin: 15px;
+
+        .fa {
+          color: var(--theme-color);
+          font-size: 2.7rem;
+        }
+
+        .h2 {
+          font-size: 30px;
+          color: var(--heading-color);
+        }
+
+        .p {
+          font-size: 20px;
+          color: var(--paragraph-color);
+        }
+      }
+    }
+
+    .send-message {
+      width: 50%;
+      /* height: 22.1rem; */
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+
+      .input {
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 15px;
+        padding-left: 12px;
+        border: 1.5px solid var(--border-color);
+        color: var(--paragraph-color);
+        background-color: #f6f6f6;
+        margin-bottom: 9px;
+
+        /* &:focus {
+          box-shadow: var(--box-shadow);
+          border: 1px solid var(--border-color);
+        } */
+      }
+
+      .name-email {
+        width: 100%;
+        display: flex;
+        column-gap: 10px;
+
+        #name,
+        #email {
+          height: 3rem;
+          width: 40%;
+        }
+      }
+      #subject {
+        height: 3rem;
+        width: calc(80% + 10px);
+      }
+      #textarea {
+        width: calc(80% + 10px);
+        height: auto;
+        border-radius: 15px;
+        padding: 12px;
+      }
+    }
+  }
+}
+
+.submit-reset-buttons {
+  display: flex;
+}
+
+.formbtn {
+  border: none;
+  padding-bottom: 14px;
+  margin-right: 1rem;
+}
+
+#sub {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .Contact {
+    padding: 3rem 5%;
+  }
+}
+@media screen and (max-width: 845px) {
+  .Contact {
+    .contact-info {
+      flex-direction: column;
+
+      .othercontact {
+        width: 100%;
+      }
+      .send-message {
+        width: 100%;
+        .name-email {
+          flex-direction: column;
+          /* column-gap: 10px; */
+
+          #name,
+          #email {
+            height: 3rem;
+            width: 100%;
+          }
+        }
+        #subject {
+          width: 100%;
+        }
+        #textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

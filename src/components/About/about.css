@@ -1,0 +1,116 @@
+.about {
+  padding: 3rem 10%;
+
+  .about-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2.5rem;
+
+    .about-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+
+      .about-image {
+        width: 70%;
+        background-color: var(--theme-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 21rem;
+        border-radius: 5rem;
+
+        .numberOfProjects {
+          font-size: 18rem;
+        }
+
+        .PlusContainer {
+          display: flex;
+          flex-direction: column;
+          font-size: xxx-large;
+        }
+      }
+    }
+
+    .about-para {
+      width: 50%;
+      color: var(--paragraph-color);
+
+      .social-icons {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+
+        .fa {
+          margin-right: 1rem;
+        }
+      }
+      .about-btn {
+        margin-top: 2rem;
+      }
+    }
+
+    .cv {
+      width: 100%;
+      height: 100dvh;
+      flex-direction: row-reverse;
+      justify-content: center;
+      position: fixed;
+      background: var(--bg-cv);
+      display: none;
+      z-index: 100;
+      transition: all 1s;
+    }
+
+    .cv .cvtimes {
+      background-color: var(--body-bg-color);
+      border-radius: 50%;
+      margin: 2rem 0 0 1rem;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cv .cvtimes:hover {
+      box-shadow: var(--box-shadow);
+    }
+
+    .cv .fa {
+      display: inline;
+      color: var(--icon-color);
+      line-height: 15px;
+      font-size: 2.3rem;
+    }
+
+    .cv embed,
+    object {
+      height: 96%;
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 3rem 5%;
+  }
+}
+@media screen and (max-width: 845px) {
+  .about {
+    .about-info {
+      flex-direction: column;
+
+      .about-image {
+        width: 100%;
+      }
+
+      .about-para {
+        width: 100%;
+      }
+    }
+  }
+}

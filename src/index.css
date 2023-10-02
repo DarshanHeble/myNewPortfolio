@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-size: large;
+}
+
+:root {
+  --bg-header: rgb(221 221 221 / 90%);
+  --body-bg-color: #e7e7e7;
+  --logo-color: rgba(53, 53, 53, 0.966);
+  --icon-color: rgba(53, 53, 53, 0.966);
+  --heading-color: rgb(7, 7, 7);
+  --paragraph-color: rgb(10, 10, 10);
+  --theme-color: rgb(255, 153, 0);
+  --theme-shadow-color: rgb(255, 136, 0);
+  --light-theme-color: rgb(250, 198, 139);
+  --border-color: #4e4e4e;
+  --moon-color: brightness(0.7);
+  --box-shadow: 3px 2px 9px #393939;
+  --bg-cv: rgb(214, 214, 214);
+}
+
+/* --------------------------------------Dark Theme Start------------------------------ */
+.darkmode {
+  --bg-header: rgb(31 31 31 / 82%);
+  --body-bg-color: #171717;
+  --heading-color: rgb(205 205 205);
+  --paragraph-color: rgb(200 200 200);
+  --icon-color: rgb(209 209 209);
+  --logo-color: rgb(235 235 235);
+  --theme-shadow-color: rgb(255, 166, 0);
+  --border-color: #575757;
+  --moon-color: brightness(1);
+  --box-shadow: 4px 4px 5px 0px rgb(123 121 121);
+  --bg-cv: rgb(42 40 40);
+}
+
+.btn {
+  background: var(--theme-color);
+  overflow: hidden;
+  padding: 1rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.btn:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn 3s ease-in-out infinite;
+}
+
+.btn:hover {
+  color: black;
+  border: none;
+  background: transparent;
+  /* box-shadow: 0px 1px 5px 0px black; */
+}
+
+.btn:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
+.btn:hover:after {
+  background: var(--theme-color);
+  /* background: linear-gradient(0deg, rgba(2, 126, 251, 1) 0%, rgba(0, 3, 255, 1)100%); */
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@keyframes shiny-btn {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.head {
+  font-size: x-large;
+  text-align: left;
+}
+@media screen and (max-width: 845px) {
+  p {
+    font-size: medium;
+  }
+}
