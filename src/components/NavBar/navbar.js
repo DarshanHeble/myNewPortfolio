@@ -116,6 +116,17 @@ function Navbar() {
           />
         </span>
 
+        {/* <span className="span1 bar">
+          <FontAwesomeIcon
+            className="fa-bar"
+            title="Main Menu"
+            icon={faEllipsisVertical}
+          />
+        </span> */}
+      </div>
+
+      {/* mobile menu  */}
+      <div className="mobilemenu">
         <span className="span1 bar">
           <FontAwesomeIcon
             className="fa-bar"
@@ -123,21 +134,18 @@ function Navbar() {
             icon={faEllipsisVertical}
           />
         </span>
-      </div>
-
-      {/* mobile menu  */}
-      {/* <div className="mobile-menue">
-        <div className="wraper">
+        <div className="mobilewrapper">
           <Link
             activeClass="active"
             to="home"
             offset={-20}
             spy={true}
             smooth={true}
+            // duration={900}
             className="button b1"
           >
             <div className="icon icon1">
-              <i class="fa-solid fa-house-crack"></i>
+              <FontAwesomeIcon icon={faHouseCrack} />
             </div>
             <div className="tooltip t1">Home</div>
           </Link>
@@ -151,7 +159,7 @@ function Navbar() {
             className="button b2"
           >
             <div className="icon icon2">
-              <i class="fa-solid fa-user-tag"></i>
+              <FontAwesomeIcon icon={faUserTag} />
             </div>
             <div className="tooltip t2 ">About</div>
           </Link>
@@ -165,11 +173,24 @@ function Navbar() {
             className="button b3"
           >
             <div className="icon icon3">
-              <i className="fa fa-star-half-o"></i>
+              <FontAwesomeIcon icon={faStarHalfStroke} />
             </div>
             <div className="tooltip t3 ">Skills</div>
           </Link>
 
+          <Link
+            activeClass="active"
+            to="projects"
+            offset={-20}
+            spy={true}
+            smooth={true}
+            className="button b4"
+          >
+            <div className="icon icon4">
+              <FontAwesomeIcon icon={faDiagramProject} />
+            </div>
+            <div className="tooltip t4">Projects</div>
+          </Link>
           <Link
             activeClass="active"
             to="contact"
@@ -179,12 +200,12 @@ function Navbar() {
             className="button b6"
           >
             <div className="icon icon6">
-              <i class="fa-solid fa-message"></i>
+              <FontAwesomeIcon icon={faMessage} />
             </div>
             <div className="tooltip t6">Contact</div>
           </Link>
         </div>
-      </div> */}
+      </div>
     </nav>
   );
 }

@@ -131,6 +131,97 @@
       display: none;
     }
   }
+  .mobilemenu {
+    overflow: hidden;
+
+    .mobilewrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      padding: 1rem;
+      font-size: 2rem;
+      border-radius: 1rem 0rem 1rem 1rem;
+      background-color: var(--theme-color);
+      overflow: hidden;
+      /* transition: width 1s ease-in-out, height 1s ease-in-out; */
+      transition: all 1s;
+
+      .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+        transition: all ease-in 1s;
+        color: black;
+
+        &.active {
+          .tooltip {
+            border-bottom: solid;
+          }
+          .t1,
+          .t2,
+          .t3 {
+            width: 5.5rem;
+          }
+
+          .t4 {
+            width: 6.7rem;
+          }
+
+          .t5 {
+            width: 7.9rem;
+          }
+          .t6 {
+            width: 6.7rem;
+          }
+        }
+
+        .icon {
+          padding-right: 5px;
+          transition: all 1s;
+
+          /* &:hover {
+          padding-right: 5px;
+        } */
+        }
+
+        .tooltip {
+          width: 0;
+          overflow: hidden;
+          transition: all 1s;
+        }
+
+        &:hover {
+          .t1,
+          .t2,
+          .t3 {
+            width: 5.5rem;
+          }
+
+          .t4 {
+            width: 6.7rem;
+          }
+
+          .t5 {
+            width: 7.9rem;
+          }
+          .t6 {
+            width: 6.7rem;
+          }
+        }
+      }
+    }
+    &:hover {
+      .mobilewrapper {
+        width: 15rem;
+        height: 25rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
