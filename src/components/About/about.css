@@ -45,6 +45,11 @@
 
         .fa {
           margin-right: 1rem;
+
+          &:hover {
+            /* outline: 1px solid var(--theme-color); */
+            color: var(--theme-color);
+          }
         }
       }
       .about-btn {
