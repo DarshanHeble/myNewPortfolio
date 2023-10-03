@@ -179,7 +179,7 @@
         background-color: var(--theme-color);
         overflow: hidden;
         /* transition: width 1s ease-in-out, height 1s ease-in-out; */
-        transition: all 1s;
+        transition: all 0.5s;
 
         .button {
           display: flex;
