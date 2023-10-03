@@ -127,98 +127,135 @@
         /* box-shadow: 0px 1px 4px 3px rgba(60, 64, 67, 0.08); */
       }
     }
-    .bar {
-      display: none;
-    }
   }
   .mobilemenu {
+    display: none;
     overflow: hidden;
 
-    .mobilewrapper {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      padding: 1rem;
-      font-size: 2rem;
-      border-radius: 1rem 0rem 1rem 1rem;
-      background-color: var(--theme-color);
-      overflow: hidden;
-      /* transition: width 1s ease-in-out, height 1s ease-in-out; */
-      transition: all 1s;
+    .span1 {
+      display: grid;
+      place-items: center;
+      /* background-color: grey; */
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
 
-      .button {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 1rem;
+      .fa-moon {
+        transform: rotate(-15deg);
         cursor: pointer;
-        transition: all ease-in 1s;
-        color: black;
+      }
 
-        &.active {
-          .tooltip {
-            border-bottom: solid;
-          }
-          .t1,
-          .t2,
-          .t3 {
-            width: 5.5rem;
-          }
+      &:hover {
+        background-color: rgba(60, 64, 67, 0.08);
+        /* box-shadow: 0px 1px 4px 3px rgba(60, 64, 67, 0.08); */
+      }
+    }
 
-          .t4 {
-            width: 6.7rem;
-          }
-
-          .t5 {
-            width: 7.9rem;
-          }
-          .t6 {
-            width: 6.7rem;
-          }
-        }
-
-        .icon {
-          padding-right: 5px;
-          transition: all 1s;
-
-          /* &:hover {
-          padding-right: 5px;
-        } */
-        }
-
-        .tooltip {
-          width: 0;
-          overflow: hidden;
-          transition: all 1s;
-        }
+    .bar {
+      .span1 {
+        place-items: center;
+        /* background-color: grey; */
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
 
         &:hover {
-          .t1,
-          .t2,
-          .t3 {
-            width: 5.5rem;
+          background-color: rgba(60, 64, 67, 0.08);
+          /* box-shadow: 0px 1px 4px 3px rgba(60, 64, 67, 0.08); */
+        }
+      }
+      .mobilewrapper {
+        /* display: flex; */
+        position: absolute;
+        /* top: 2rem;
+        right: 2.4rem; */
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        padding: 0;
+        font-size: 2rem;
+        border-radius: 1rem 0rem 1rem 1rem;
+        background-color: var(--theme-color);
+        overflow: hidden;
+        /* transition: width 1s ease-in-out, height 1s ease-in-out; */
+        transition: all 1s;
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 1rem;
+          cursor: pointer;
+          transition: all ease-in 1s;
+          color: black;
+
+          &.active {
+            .tooltip {
+              border-bottom: solid;
+            }
+            .t1,
+            .t2,
+            .t3 {
+              width: 5.5rem;
+            }
+
+            .t4 {
+              width: 6.7rem;
+            }
+
+            .t5 {
+              width: 7.9rem;
+            }
+            .t6 {
+              width: 6.7rem;
+            }
           }
 
-          .t4 {
-            width: 6.7rem;
+          .icon {
+            padding-right: 5px;
+            transition: all 1s;
+
+            /* &:hover {
+            padding-right: 5px;
+          } */
           }
 
-          .t5 {
-            width: 7.9rem;
+          .tooltip {
+            width: 0;
+            overflow: hidden;
+            transition: all 1s;
           }
-          .t6 {
-            width: 6.7rem;
+
+          &:hover {
+            .t1,
+            .t2,
+            .t3 {
+              width: 5.5rem;
+            }
+
+            .t4 {
+              width: 6.7rem;
+            }
+
+            .t5 {
+              width: 7.9rem;
+            }
+            .t6 {
+              width: 6.7rem;
+            }
           }
         }
       }
-    }
-    &:hover {
-      .mobilewrapper {
-        width: 15rem;
-        height: 25rem;
+      &:hover {
+        .mobilewrapper {
+          width: 15rem;
+          height: 24rem;
+          /* top: 0;
+          right: 0; */
+          padding: 1rem;
+        }
       }
     }
   }
@@ -241,9 +278,10 @@
       display: none;
     }
     .moonbar {
-      .bar {
-        display: grid;
-      }
+      display: none;
+    }
+    .mobilemenu {
+      display: flex;
     }
   }
 }
