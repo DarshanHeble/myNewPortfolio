@@ -70,10 +70,6 @@
       .icon {
         padding-right: 5px;
         transition: all 1s;
-
-        /* &:hover {
-          padding-right: 5px;
-        } */
       }
 
       .tooltip {
