@@ -15,6 +15,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
+  var bar = document.querySelector(".bar");
+  // var hammertime = new Hammer(bar);
   return (
     <nav className="navbar">
       <div className="navLogo">
